@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0C0A09">
+  <title>Customer Dashboard — Stackly · Ember &amp; Oak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/premium.css">
+  <link rel="stylesheet" href="css/premium-responsive.css">
+</head>
+<body class="dashboard-page dashboard-page--customer premium-theme">
+
+  <div class="dashboard-backdrop" data-dash-backdrop aria-hidden="true"></div>
+
+  <div class="dashboard-shell">
+    <aside class="dashboard-sidebar-pro" data-dash-sidebar id="dash-sidebar" aria-label="Customer sidebar">
+      <div class="dashboard-sidebar-pro__logo">
+        <a href="index.html"><img class="dashboard-sidebar-pro__logo-img" src="images/stackly-restaurant-logo.webp" alt="Ember &amp; Oak" width="180" height="40"></a>
+      </div>
+      <div class="dashboard-sidebar-pro__profile">
+        <div class="dashboard-sidebar-pro__avatar" data-dash-avatar aria-hidden="true">EO</div>
+        <div>
+          <strong class="dashboard-sidebar-pro__profile-name" data-dash-user-name>Guest</strong>
+          <span class="dashboard-sidebar-pro__profile-email" data-dash-user-email>guest@emberandoak.com</span>
+        </div>
+      </div>
+      <p class="dashboard-sidebar-pro__console-label">Customer portal</p>
+      <ul class="dashboard-nav-pro">
+        <li><a href="#dash-overview" class="dashboard-sidebar-pro__link is-active" data-dash-nav>Overview</a></li>
+        <li><a href="#dash-reservations" class="dashboard-sidebar-pro__link" data-dash-nav>My Reservations</a></li>
+        <li><a href="#dash-orders" class="dashboard-sidebar-pro__link" data-dash-nav>Order History</a></li>
+        <li><a href="#dash-favorites" class="dashboard-sidebar-pro__link" data-dash-nav>Favorites</a></li>
+        <li><a href="login.html" data-dash-signout>Logout</a></li>
+      </ul>
+    </aside>
+
+    <div class="dashboard-main-pro" data-dash-main>
+      <button type="button" class="dash-sidebar-toggle" data-dash-sidebar-toggle aria-expanded="false" aria-controls="dash-sidebar">☰ Menu</button>
+
+      <section id="dash-overview" class="dash-section" data-dash-section aria-labelledby="dash-overview-title">
+        <div class="dashboard-top">
+          <div>
+            <h1 id="dash-overview-title" data-dash-greeting>Welcome, Guest.</h1>
+            <p class="dashboard-top__sub">Manage your reservations and dining history.</p>
+          </div>
+          <a class="btn btn--primary" href="404.html">Book a Table</a>
+        </div>
+
+        <div class="dash-stat-grid">
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Upcoming bookings</span>
+            <span class="dash-stat-card__value">2</span>
+            <span class="dash-stat-card__hint">Next: Sat 7:30pm</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Past visits</span>
+            <span class="dash-stat-card__value">8</span>
+            <span class="dash-stat-card__hint">Since 2024</span>
+          </div>
+          <div class="dash-stat-card">
+            <span class="dash-stat-card__label">Loyalty points</span>
+            <span class="dash-stat-card__value">340</span>
+            <span class="dash-stat-card__hint">160 to next reward</span>
+          </div>
+        </div>
+
+        <div class="dash-quick-grid">
+          <div class="dash-quick-card">
+            <strong>Your tier</strong>
+            <p>Silver member · complimentary dessert on your next visit</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Preferred seating</strong>
+            <p>Window booth · saved to your profile</p>
+          </div>
+          <div class="dash-quick-card">
+            <strong>Wine preference</strong>
+            <p>Pinot Noir · noted for sommelier pairings</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-reservations" class="dash-section" data-dash-section aria-labelledby="dash-reservations-title">
+        <header class="dash-section__head">
+          <h2 id="dash-reservations-title">My reservations</h2>
+          <p>Upcoming tables and past dining dates at Ember &amp; Oak.</p>
+        </header>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Upcoming</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Date</th><th>Time</th><th>Guests</th><th>Occasion</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Sat, Jun 21</td><td>7:30 PM</td><td>2</td><td>Anniversary</td><td><span class="status-badge status-badge--confirmed">Confirmed</span></td></tr>
+                <tr><td>Fri, Jul 4</td><td>8:00 PM</td><td>4</td><td>Family dinner</td><td><span class="status-badge status-badge--pending">Pending</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Past visits</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Date</th><th>Time</th><th>Guests</th><th>Notes</th></tr></thead>
+              <tbody>
+                <tr><td>May 28, 2026</td><td>8:00 PM</td><td>2</td><td>Chef's pick · window seat</td></tr>
+                <tr><td>Apr 12, 2026</td><td>7:30 PM</td><td>3</td><td>Wine pairing menu</td></tr>
+                <tr><td>Mar 5, 2026</td><td>9:00 PM</td><td>2</td><td>Date night</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-orders" class="dash-section" data-dash-section aria-labelledby="dash-orders-title">
+        <header class="dash-section__head">
+          <h2 id="dash-orders-title">Order history</h2>
+          <p>Dishes you've enjoyed and receipts from previous visits.</p>
+        </header>
+
+        <div class="dashboard-panel">
+          <div class="dashboard-panel__head">Recent orders</div>
+          <div class="dashboard-panel__body dashboard-panel__body--scroll">
+            <table class="data-table">
+              <thead><tr><th>Visit date</th><th>Dish</th><th>Course</th><th>Amount</th></tr></thead>
+              <tbody>
+                <tr><td>May 28, 2026</td><td>Wood-Fired Lamb Rack</td><td>Mains</td><td>₹1,450</td></tr>
+                <tr><td>May 28, 2026</td><td>Truffle Burrata</td><td>Starters</td><td>₹680</td></tr>
+                <tr><td>May 28, 2026</td><td>Dark Chocolate Fondant</td><td>Desserts</td><td>₹520</td></tr>
+                <tr><td>Apr 12, 2026</td><td>Pan-Seared Sea Bass</td><td>Mains</td><td>₹1,280</td></tr>
+                <tr><td>Apr 12, 2026</td><td>Ember Old Fashioned</td><td>Drinks</td><td>₹680</td></tr>
+                <tr><td>Mar 5, 2026</td><td>Wild Mushroom Risotto</td><td>Mains</td><td>₹920</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="dash-favorites" class="dash-section" data-dash-section aria-labelledby="dash-favorites-title">
+        <header class="dash-section__head">
+          <h2 id="dash-favorites-title">Favorites</h2>
+          <p>Save dishes and drinks to reorder on your next visit.</p>
+        </header>
+
+        <div class="dash-favorites-grid">
+          <article class="dash-favorite-card">
+            <h3>Wood-Fired Lamb Rack</h3>
+            <p>Signature mains · ₹1,450</p>
+            <span class="dash-favorite-card__tag">Most ordered</span>
+          </article>
+          <article class="dash-favorite-card">
+            <h3>Truffle Burrata</h3>
+            <p>Starters · ₹680</p>
+            <span class="dash-favorite-card__tag">Starter pick</span>
+          </article>
+          <article class="dash-favorite-card">
+            <h3>Ember Old Fashioned</h3>
+            <p>Bar · ₹680</p>
+            <span class="dash-favorite-card__tag">Bar favorite</span>
+          </article>
+          <article class="dash-favorite-card">
+            <h3>Dark Chocolate Fondant</h3>
+            <p>Desserts · ₹520</p>
+            <span class="dash-favorite-card__tag">Sweet finish</span>
+          </article>
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

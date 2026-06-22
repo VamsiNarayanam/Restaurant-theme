@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stackly · Ember &amp; Oak menu — Seasonal starters, wood-fired mains, desserts, and sommelier-curated drinks in Bangalore.">
+  <meta name="theme-color" content="#0C0A09">
+  <title>Menu — Stackly · Ember &amp; Oak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/premium.css">
+  <link rel="stylesheet" href="css/premium-responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+</head>
+<body class="page-inner page-menu page-hero-overlay premium-theme">
+
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader__stage">
+      <div class="preloader__ring" aria-hidden="true"><span class="preloader__ring-arc"></span></div>
+      <img class="preloader__logo" src="images/stackly-restaurant-logo.webp" alt="Stackly · Ember &amp; Oak" width="220" height="48" decoding="async">
+      <div class="preloader__progress" role="progressbar" aria-label="Loading" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <span class="preloader__progress-fill"></span>
+      </div>
+      <p class="preloader__tagline">Preparing tonight's menu…</p>
+    </div>
+  </div>
+
+  <header class="site-header site-header--pro" id="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="logo logo--pro" href="index.html" aria-label="Stackly · Ember &amp; Oak home">
+        <img class="logo__img" src="images/stackly-restaurant-logo.webp" alt="Stackly · Ember &amp; Oak" width="200" height="44" decoding="async">
+      </a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-wrap" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <div class="site-header__nav-wrap" id="nav-wrap">
+        <div class="site-header__nav-inner">
+          <nav class="site-header__nav" aria-label="Main navigation">
+            <ul class="nav-list">
+              <li><a class="nav-link" href="index.html" data-nav-file="index.html">Home</a></li>
+              <li><a class="nav-link" href="about.html" data-nav-file="about.html">About</a></li>
+              <li><a class="nav-link" href="menu.html" data-nav-file="menu.html">Menu</a></li>
+              <li><a class="nav-link" href="blog.html" data-nav-file="blog.html">Blogs</a></li>
+              <li><a class="nav-link" href="contact.html" data-nav-file="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="site-header__actions">
+            <a class="btn btn--nav-login" href="login.html" data-nav-file="login.html">Login</a>
+            <a class="btn btn--nav-register" href="register.html">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <section class="page-hero page-hero--image page-hero--center" aria-labelledby="page-title">
+      <div class="page-hero__bg" aria-hidden="true">
+        <img src="images/menu-hero.webp" alt="" width="1920" height="800" decoding="async">
+      </div>
+      <div class="container page-hero__inner">
+        <p class="section__kicker" data-aos="fade-up">Our menu</p>
+        <h1 id="page-title" data-aos="fade-up" data-aos-delay="100">Seasonal plates,<br>fire-kissed perfection</h1>
+        <p class="section__lead" data-aos="fade-up" data-aos-delay="150">Ingredients change with the harvest. Our kitchen builds menus around what arrives freshest from farms within 150 km.</p>
+        <div class="page-hero-stats page-hero-stats--center" data-aos="fade-up" data-aos-delay="200">
+          <span><strong>12</strong> highlights</span>
+          <span><strong>120</strong> wine labels</span>
+          <span><strong>GF / VG</strong> options</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-chef-pick section section--dark" aria-label="Chef's pick">
+      <div class="container">
+        <article class="chef-pick glass-card" data-menu-feature data-aos="fade-up">
+          <div class="chef-pick__image">
+            <img src="images/wood-fired-lamb.webp" alt="Wood-fired lamb rack with rosemary jus" width="700" height="500" loading="lazy" decoding="async">
+          </div>
+          <div class="chef-pick__body">
+            <span class="chef-pick__badge">Chef's Pick</span>
+            <h2>Wood-Fired Lamb Rack</h2>
+            <p>Slow-roasted over applewood, finished with rosemary jus, charred leek, and silky pomme purée. A signature dish that has defined Ember &amp; Oak since our opening night—limited to 24 covers per service.</p>
+            <p><strong>Wine pairing:</strong> Barolo DOCG or our house Pinot Noir, Burgundy</p>
+            <p class="chef-pick__price">₹1,450</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-filter-section" aria-label="Menu categories">
+      <br/>
+      <div class="container">
+        <div class="menu-filter-bar">
+          <div class="menu-filter-shell glass-card">
+            <p class="menu-filter-shell__label">Browse by course</p>
+            <div class="menu-tabs" data-menu-filter role="tablist" aria-label="Filter menu by category">
+              <button type="button" class="menu-tab is-active" data-menu-tab="all" role="tab" aria-selected="true">All</button>
+              <button type="button" class="menu-tab" data-menu-tab="starters" role="tab" aria-selected="false">Starters</button>
+              <button type="button" class="menu-tab" data-menu-tab="mains" role="tab" aria-selected="false">Mains</button>
+              <button type="button" class="menu-tab" data-menu-tab="desserts" role="tab" aria-selected="false">Desserts</button>
+              <button type="button" class="menu-tab" data-menu-tab="drinks" role="tab" aria-selected="false">Drinks</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark page-menu__content" id="menu-content">
+      <div class="container menu-board" data-menu-board>
+
+        <div class="menu-section" data-menu-section="starters">
+          <header class="menu-section__head">
+            <h2>Starters</h2>
+            <span class="menu-section__count" data-menu-count="starters">3 items</span>
+          </header>
+          <div class="menu-cards">
+            <article class="menu-card menu-item glass-card" data-category="starters">
+              <div class="menu-card__media">
+                <img src="images/truffle-burata.webp" alt="Truffle burrata with heirloom tomato" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Truffle Burrata</h3>
+                  <span class="menu-card__price">₹680</span>
+                </div>
+                <p class="menu-card__desc">Heirloom tomato, basil oil, aged balsamic, sourdough crostini</p>
+                <div class="menu-item__tags"><span class="menu-tag menu-tag--v">V</span></div>
+              </div>
+            </article>
+            <article class="menu-card menu-item glass-card" data-category="starters">
+              <div class="menu-card__media">
+                <img src="images/chared-octopus.webp" alt="Charred octopus with romesco" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Charred Octopus</h3>
+                  <span class="menu-card__price">₹890</span>
+                </div>
+                <p class="menu-card__desc">Smoked paprika, fingerling potato, romesco, micro herbs</p>
+                <div class="menu-item__tags"><span class="menu-tag menu-tag--gf">GF</span></div>
+              </div>
+            </article>
+            <article class="menu-card menu-item glass-card" data-category="starters">
+              <div class="menu-card__media">
+                <img src="images/beetroot-carpacio.webp" alt="Beetroot carpaccio with goat cheese" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Beetroot Carpaccio</h3>
+                  <span class="menu-card__price">₹620</span>
+                </div>
+                <p class="menu-card__desc">Horseradish cream, aged goat cheese, walnut, micro arugula</p>
+                <div class="menu-item__tags"><span class="menu-tag menu-tag--v">V</span><span class="menu-tag menu-tag--gf">GF</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-section" data-menu-section="mains">
+          <header class="menu-section__head">
+            <h2>Mains</h2>
+            <span class="menu-section__count" data-menu-count="mains">3 items</span>
+          </header>
+          <div class="menu-cards">
+            <article class="menu-card menu-item glass-card" data-category="mains">
+              <div class="menu-card__media">
+                <img src="images/pan-seared-seabass.webp" alt="Pan-seared sea bass" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Pan-Seared Sea Bass</h3>
+                  <span class="menu-card__price">₹1,280</span>
+                </div>
+                <p class="menu-card__desc">Citrus beurre blanc, grilled asparagus, fennel salad</p>
+                <div class="menu-item__tags"><span class="menu-tag menu-tag--gf">GF</span></div>
+              </div>
+            </article>
+            <article class="menu-card menu-item glass-card" data-category="mains">
+              <div class="menu-card__media">
+                <img src="images/wagyu-striploin.webp" alt="Wagyu striploin with bone marrow" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Wagyu Striploin MBS 5+</h3>
+                  <span class="menu-card__price">₹2,400</span>
+                </div>
+                <p class="menu-card__desc">Charred bone marrow, red wine demi-glace, confit garlic, seasonal greens</p>
+                <div class="menu-item__tags"><span class="menu-tag menu-tag--gf">GF</span></div>
+              </div>
+            </article>
+            <article class="menu-card menu-item glass-card" data-category="mains">
+              <div class="menu-card__media">
+                <img src="images/mushroom-risotto-recipe.webp" alt="Wild mushroom risotto" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Wild Mushroom Risotto</h3>
+                  <span class="menu-card__price">₹920</span>
+                </div>
+                <p class="menu-card__desc">Porcini, parmesan crisp, truffle oil, aged Parmigiano-Reggiano</p>
+                <div class="menu-item__tags"><span class="menu-tag menu-tag--v">V</span><span class="menu-tag menu-tag--vg">VG</span><span class="menu-tag menu-tag--gf">GF</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-section" data-menu-section="desserts">
+          <header class="menu-section__head">
+            <h2>Desserts</h2>
+            <span class="menu-section__count" data-menu-count="desserts">3 items</span>
+          </header>
+          <div class="menu-cards">
+            <article class="menu-card menu-item glass-card" data-category="desserts">
+              <div class="menu-card__media">
+                <img src="images/Chocolate-fondant.webp" alt="Dark chocolate fondant" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Dark Chocolate Fondant</h3>
+                  <span class="menu-card__price">₹520</span>
+                </div>
+                <p class="menu-card__desc">Valrhona 70%, salted caramel centre, vanilla bean gelato</p>
+                <div class="menu-item__tags"><span class="menu-tag menu-tag--v">V</span></div>
+              </div>
+            </article>
+            <article class="menu-card menu-item glass-card" data-category="desserts">
+              <div class="menu-card__media">
+                <img src="images/tiramisu.webp" alt="Classic tiramisu" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Tiramisu</h3>
+                  <span class="menu-card__price">₹450</span>
+                </div>
+                <p class="menu-card__desc">Espresso-soaked ladyfinger, mascarpone cream, Valrhona cocoa dust</p>
+                <div class="menu-item__tags"><span class="menu-tag menu-tag--v">V</span></div>
+              </div>
+            </article>
+            <article class="menu-card menu-item glass-card" data-category="desserts">
+              <div class="menu-card__media">
+                <img src="images/lemon posset.webp" alt="Lemon posset with berry compote" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Lemon Posset</h3>
+                  <span class="menu-card__price">₹480</span>
+                </div>
+                <p class="menu-card__desc">Silky citrus cream, seasonal berry compote, shortbread crumble</p>
+                <div class="menu-item__tags"><span class="menu-tag menu-tag--v">V</span><span class="menu-tag menu-tag--gf">GF</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-section" data-menu-section="drinks">
+          <header class="menu-section__head">
+            <h2>Drinks</h2>
+            <span class="menu-section__count" data-menu-count="drinks">3 items</span>
+          </header>
+          <div class="menu-cards">
+            <article class="menu-card menu-item glass-card" data-category="drinks">
+              <div class="menu-card__media">
+                <img src="images/ember-old-fashioned.webp" alt="Ember old fashioned cocktail" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Ember Old Fashioned</h3>
+                  <span class="menu-card__price">₹680</span>
+                </div>
+                <p class="menu-card__desc">Bourbon, smoked bitters, orange peel, maple syrup, applewood smoke</p>
+              </div>
+            </article>
+            <article class="menu-card menu-item glass-card" data-category="drinks">
+              <div class="menu-card__media">
+                <img src="images/wine-program.webp" alt="Champagne brut pour" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Champagne Brut</h3>
+                  <span class="menu-card__price">₹1,200 / glass</span>
+                </div>
+                <p class="menu-card__desc">House pour — toasty, fine bubbles, celebratory finish</p>
+              </div>
+            </article>
+            <article class="menu-card menu-item glass-card" data-category="drinks">
+              <div class="menu-card__media">
+                <img src="images/sommelier-wine.webp" alt="Sommelier pinot noir pour" width="640" height="420" loading="lazy" decoding="async">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__top">
+                  <h3 class="menu-card__name">Sommelier's Pinot Noir</h3>
+                  <span class="menu-card__price">₹850 / glass</span>
+                </div>
+                <p class="menu-card__desc">Burgundy-style red — cherry, earth, silky tannins, pairs with hearth mains</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="menu-empty" data-menu-empty hidden>No dishes in this category tonight—try another course or ask your server.</p>
+
+        <p class="menu-note" data-aos="fade-up">A curated snapshot of tonight's menu—ask your server for the full list, daily specials, and wine pairings. GF / VG options available on request.</p>
+
+        <section class="menu-faq section--inset" id="menu-faq" aria-labelledby="menu-faq-title">
+          <header class="section__head section__head--center" data-aos="fade-up">
+            <p class="section__kicker">Questions</p>
+            <h2 class="section__title" id="menu-faq-title">Menu FAQ</h2>
+            <p class="section__lead">Dietary needs, reservations, and how our seasonal menu works.</p>
+          </header>
+          <div class="faq-list" data-faq data-aos="fade-up">
+            <div class="faq-item glass-card">
+              <button type="button" class="faq-item__trigger" data-faq-trigger aria-expanded="false">Does the menu change seasonally?</button>
+              <div class="faq-item__panel" data-faq-panel>
+                <div class="faq-item__panel-inner">
+                  <p>Yes. We revise dishes every 6–8 weeks based on what arrives from farms within 150 km. Signature plates like our wood-fired lamb rack stay on the menu, while starters and desserts rotate with the harvest.</p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item glass-card">
+              <button type="button" class="faq-item__trigger" data-faq-trigger aria-expanded="false">Can you accommodate allergies and dietary preferences?</button>
+              <div class="faq-item__panel" data-faq-panel>
+                <div class="faq-item__panel-inner">
+                  <p>Absolutely. Inform your server when you book or arrive—we mark GF, VG, and V options on the menu and our kitchen can adapt most dishes. For severe allergies, please mention them at reservation so the brigade can prepare safely.</p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item glass-card">
+              <button type="button" class="faq-item__trigger" data-faq-trigger aria-expanded="false">Is the chef's pick available every night?</button>
+              <div class="faq-item__panel" data-faq-panel>
+                <div class="faq-item__panel-inner">
+                  <p>Our wood-fired lamb rack is limited to 24 covers per service. We recommend booking ahead for weekends. When it sells out, your server will suggest the closest alternative from the hearth.</p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item glass-card">
+              <button type="button" class="faq-item__trigger" data-faq-trigger aria-expanded="false">Do you offer wine pairings with the menu?</button>
+              <div class="faq-item__panel" data-faq-panel>
+                <div class="faq-item__panel-inner">
+                  <p>Our sommelier curates pairings for tasting menus and can recommend by-the-glass options for any course. Ask for the full wine list or a pairing suggestion when you order.</p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item glass-card">
+              <button type="button" class="faq-item__trigger" data-faq-trigger aria-expanded="false">Are prices inclusive of taxes and service?</button>
+              <div class="faq-item__panel" data-faq-panel>
+                <div class="faq-item__panel-inner">
+                  <p>Menu prices are per dish before taxes. A discretionary service charge may apply on the final bill—your server can confirm current policy when you dine.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="cta-band cta-band--spaced" data-aos="fade-up">
+          <h2>Ready to dine?</h2>
+          <p>Limited seats nightly. Book 48 hours ahead for weekends and chef's tasting menu.</p>
+          <div class="cta-band__actions">
+            <a class="btn btn--primary" href="404.html">Book a Table</a>
+            <a class="btn btn--outline-light" href="404.html">Make a reservation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-premium footer-premium--pro" id="site-footer">
+    <div class="container footer-premium__grid">
+      <div class="footer-brand">
+        <a class="logo logo--pro" href="index.html" aria-label="Stackly · Ember &amp; Oak home">
+          <img class="logo__img" src="images/stackly-restaurant-logo.webp" alt="Stackly · Ember &amp; Oak" width="200" height="44" decoding="async">
+        </a>
+        <p>Seasonal ingredients, fire-kissed flavors, and hospitality worth remembering—served nightly in the heart of Bangalore.</p>
+        <div class="footer-social">
+          <a href="404.html" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 110 2.881 1.44 1.44 0 010-2.881z"/></svg></a>
+          <a href="404.html" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg></a>
+          <a href="404.html" aria-label="Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="404.html" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Dining</h4>
+        <ul>
+          <li><a href="404.html">Reservations</a></li>
+          <li><a href="404.html">Gallery</a></li>
+          <li><a href="404.html">Private Dining</a></li>
+          <li><a href="404.html">Wine List</a></li>
+          <li><a href="404.html">Chef's Table</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <address class="footer-contact__addr">
+          <p class="footer-contact__row">
+            <span class="footer-contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+            <a href="mailto:hello@emberandoak.com">info@stackly.com</a>
+          </p>
+          <p class="footer-contact__row">
+            <span class="footer-contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <a href="tel:+919876543210">+91-9876543210</a>
+          </p>
+          <p class="footer-contact__row">
+            <span class="footer-contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span>Begur, Bangalore 560068</span>
+          </p>
+          <p class="footer-contact__row">
+            <span class="footer-contact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+            <span>Mon–Thu 12pm–11pm · Fri–Sun 12pm–12am</span>
+          </p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div class="container footer-bar__inner">
+        <p>&copy; <span data-year>2026</span> Stackly · Ember &amp; Oak. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

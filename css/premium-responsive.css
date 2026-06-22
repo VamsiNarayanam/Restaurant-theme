@@ -1,0 +1,407 @@
+/* ==========================================================================
+   Stackly · Ember & Oak — Premium Responsive Tweaks
+   Premium-specific breakpoint adjustments
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Hero — premium mobile refinements
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  body.premium-theme .hero-premium__kicker {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  body.premium-theme .hero-premium__content--center .hero-premium__kicker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: auto;
+    max-width: 100%;
+    margin-inline: auto;
+    gap: 0.65rem;
+  }
+
+  body.premium-theme .hero-premium__kicker::before,
+  body.premium-theme .hero-premium__content--center .hero-premium__kicker::before,
+  body.premium-theme .hero-premium__content--center .hero-premium__kicker::after {
+    display: none;
+  }
+
+  body.premium-theme .hero-premium__stats-card {
+    background: rgba(28, 25, 23, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  body.premium-theme .hero-premium__glow {
+    opacity: 0.5;
+    transform: scale(0.7);
+  }
+
+  body.premium-theme.page-home .site-header:not(.is-scrolled),
+  body.premium-theme.page-inner.page-hero-overlay .site-header:not(.is-scrolled) {
+    background: rgba(12, 10, 9, 0.35);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  body.premium-theme .site-header__nav-inner {
+    background: rgba(28, 25, 23, 0.98);
+    border-color: rgba(212, 175, 55, 0.15);
+    box-shadow:
+      0 24px 64px rgba(0, 0, 0, 0.6),
+      0 0 32px rgba(212, 175, 55, 0.08);
+  }
+
+  body.premium-theme .site-header__nav-wrap .nav-list,
+  body.premium-theme .site-header__nav-wrap .site-header__nav,
+  body.premium-theme .site-header__nav-wrap .site-header__actions {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  body.premium-theme .site-header__nav-wrap .nav-link {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  body.premium-theme .dish-card:hover {
+    transform: translateY(-3px);
+  }
+
+  body.premium-theme .dish-card::before {
+    display: none;
+  }
+
+  body.premium-theme .chef-section__image::before {
+    display: none;
+  }
+
+  body.premium-theme .testimonial-slide--premium {
+    padding: 1.5rem;
+  }
+
+  body.premium-theme .glass-card {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet — premium layout
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  body.premium-theme .section--cream {
+    padding-block: clamp(3rem, 6vw, 5rem);
+  }
+
+  body.premium-theme .newsletter {
+    text-align: center;
+    justify-content: center;
+  }
+
+  body.premium-theme .cta-band {
+    margin-inline: 0;
+  }
+
+  body.premium-theme .footer-premium::before {
+    width: 100px;
+  }
+
+  body.premium-theme .role-card {
+    padding: 1rem;
+  }
+
+  body.premium-theme .reservation-form-card {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small phones — premium touch targets
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  body.premium-theme .btn--primary:hover {
+    box-shadow: 0 0 20px var(--eo-gold-glow-soft);
+  }
+
+  body.premium-theme .hero-premium__brand-pill {
+    font-size: 0.58rem;
+    padding: 0.35rem 0.65rem;
+  }
+
+  body.premium-theme.page-home .hero-premium--video .hero-premium__content h1 {
+    font-size: clamp(1.85rem, 9vw, 2.35rem);
+  }
+
+  body.premium-theme .page-hero--image.page-hero--center {
+    min-height: auto;
+    padding-top: calc(var(--header-h) + 1.5rem);
+    padding-bottom: 2rem;
+  }
+
+  body.premium-theme .auth-form.glass-card {
+    border-radius: var(--radius-lg);
+  }
+
+  body.premium-theme .testimonial-ornament {
+    font-size: 2.5rem;
+  }
+
+  body.premium-theme .testimonial-slide--editorial {
+    padding: 1.35rem 1.15rem;
+  }
+
+  body.premium-theme .testimonial-slide--editorial .testimonial-quote {
+    font-size: 1.05rem;
+    padding-top: 1rem;
+  }
+
+  body.premium-theme .testimonial-head {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  body.premium-theme .faq-item__trigger {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+
+  body.premium-theme .faq-item__trigger::after {
+    width: 24px;
+    height: 24px;
+    font-size: 0.9rem;
+  }
+
+  body.premium-theme .menu-filter__tab.is-active {
+    box-shadow: 0 2px 12px rgba(212, 175, 55, 0.3);
+  }
+
+  body.premium-theme .menu-tab.is-active {
+    box-shadow: 0 2px 12px rgba(212, 175, 55, 0.3);
+  }
+
+  body.premium-theme .menu-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.25rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  body.premium-theme .menu-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  body.premium-theme .menu-tab {
+    flex-shrink: 0;
+  }
+
+  body.premium-theme.page-menu .menu-card__media {
+    min-height: 180px;
+  }
+
+  body.premium-theme .error-page__code,
+  body.premium-theme .error-page--premium .error-page__card .error-page__code {
+    font-size: clamp(2.75rem, 16vw, 4.5rem);
+    filter: drop-shadow(0 0 16px var(--eo-gold-glow-soft));
+  }
+
+  body.premium-theme.page-error .error-page__card .lead {
+    margin-bottom: 0.85rem;
+  }
+
+  body.premium-theme.page-error .error-page__links {
+    margin-top: 0.85rem;
+    padding-top: 0.75rem;
+  }
+
+  body.premium-theme .page-hero h1 {
+    text-shadow: none;
+  }
+
+  body.premium-theme .section__title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  body.premium-theme.dashboard-page .dashboard-top .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Large screens — premium enhancements
+   -------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  body.premium-theme .hero-premium__content--left {
+    padding-right: 2rem;
+  }
+
+  body.premium-theme .dish-card:hover {
+    transform: translateY(-8px);
+  }
+
+  body.premium-theme .chef-section {
+    gap: 5rem;
+  }
+
+  body.premium-theme .testimonial-slide--premium {
+    padding: 3rem;
+  }
+
+  body.premium-theme .gallery-grid__item:hover {
+    transform: scale(1.02);
+    transition: transform 0.4s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Dashboard premium drawer
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  body.premium-theme.dashboard-page .dashboard-sidebar-pro {
+    background: rgba(28, 25, 23, 0.98);
+    border-right-color: rgba(212, 175, 55, 0.15);
+    box-shadow:
+      4px 0 32px rgba(0, 0, 0, 0.5),
+      0 0 24px rgba(212, 175, 55, 0.06);
+  }
+
+  body.premium-theme.dashboard-page .dashboard-backdrop.is-open {
+    background: rgba(12, 10, 9, 0.8);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  body.premium-theme.dashboard-page .dash-sidebar-toggle {
+    border-color: rgba(212, 175, 55, 0.2);
+  }
+
+  body.premium-theme.dashboard-page .dash-sidebar-toggle:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 12px var(--eo-gold-glow-soft);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Auth pages — premium mobile
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  body.premium-theme.page-auth .site-header {
+    background: rgba(12, 10, 9, 0.92);
+    border-bottom-color: rgba(212, 175, 55, 0.12);
+  }
+
+  body.premium-theme .auth-layout__panel {
+    padding: 2rem 1.25rem;
+  }
+
+  body.premium-theme .auth-form {
+    max-width: 100%;
+  }
+
+  body.premium-theme .role-selector {
+    gap: 0.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Hover capability — disable heavy effects on touch
+   -------------------------------------------------------------------------- */
+@media (hover: none) and (pointer: coarse) {
+  body.premium-theme .dish-card:hover {
+    transform: none;
+  }
+
+  body.premium-theme .dish-card:hover .dish-card__image img {
+    transform: none;
+  }
+
+  body.premium-theme .blog-card:hover {
+    transform: none;
+  }
+
+  body.premium-theme .btn--primary::before {
+    display: none;
+  }
+
+  body.premium-theme .gallery-grid__item:hover {
+    transform: none;
+  }
+
+  body.premium-theme .menu-item:hover {
+    background: transparent;
+  }
+
+  body.premium-theme .menu-item:hover .menu-item__title {
+    color: var(--color-ink);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Landscape — premium hero compression
+   -------------------------------------------------------------------------- */
+@media (max-height: 500px) and (orientation: landscape) {
+  body.premium-theme .hero-premium__glow {
+    display: none;
+  }
+
+  body.premium-theme .hero-premium__stats-card {
+    display: none;
+  }
+
+  body.premium-theme .preloader__ring {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   High contrast preference
+   -------------------------------------------------------------------------- */
+@media (prefers-contrast: more) {
+  body.premium-theme .nav-link,
+  body.premium-theme .form-label {
+    color: var(--color-ink);
+  }
+
+  body.premium-theme .glass-card,
+  body.premium-theme .testimonial-slide--premium {
+    background: var(--color-surface);
+    border-color: var(--color-accent);
+  }
+
+  body.premium-theme .btn--outline-light {
+    border-color: var(--color-ink);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Dark mode system preference alignment
+   -------------------------------------------------------------------------- */
+@media (prefers-color-scheme: light) {
+  body.premium-theme:not(.dashboard-page) {
+    color-scheme: dark;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Reduced motion — premium responsive
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) and (max-width: 768px) {
+  body.premium-theme .site-header__nav-inner {
+    transition-duration: 0.15s;
+  }
+
+  body.premium-theme .dashboard-sidebar-pro {
+    transition-duration: 0.15s;
+  }
+}
