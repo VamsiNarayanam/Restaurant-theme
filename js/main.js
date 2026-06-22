@@ -527,13 +527,16 @@
     return ok;
   }
 
-  function handleDemoFormSuccess(form, successId, redirectUrl, shouldReset) {
+  function handleDemoFormSuccess(form, successId, redirectUrl, shouldReset, redirectDelay) {
     clearFormErrors(form);
     if (shouldReset) {
       form.reset();
     }
+    if (form) {
+      form.classList.add("is-submitted");
+    }
     var msg = document.getElementById(successId);
-    var submitBtn = form.querySelector('button[type="submit"]');
+    var submitBtn = form ? form.querySelector('button[type="submit"]') : null;
     if (msg) {
       if (msg._redirectTimer) {
         clearTimeout(msg._redirectTimer);
@@ -545,11 +548,14 @@
       submitBtn.disabled = true;
       submitBtn.textContent = "Redirecting...";
     }
-    var redirectTimer = setTimeout(function () {
-      window.location.href = redirectUrl || "404.html";
-    }, 3000);
-    if (msg) {
-      msg._redirectTimer = redirectTimer;
+    if (redirectUrl) {
+      var delay = typeof redirectDelay === "number" ? redirectDelay : 3000;
+      var redirectTimer = setTimeout(function () {
+        window.location.href = redirectUrl;
+      }, delay);
+      if (msg) {
+        msg._redirectTimer = redirectTimer;
+      }
     }
   }
 
@@ -591,7 +597,19 @@
           return;
         }
         if (form.id === "newsletter-form") {
-          handleDemoFormSuccess(form, "newsletter-success", "404.html", true);
+          clearFormErrors(form);
+          form.reset();
+          var newsletterMsg = document.getElementById("newsletter-success");
+          if (newsletterMsg) {
+            if (newsletterMsg._redirectTimer) {
+              clearTimeout(newsletterMsg._redirectTimer);
+              newsletterMsg._redirectTimer = null;
+            }
+            revealMessage(newsletterMsg);
+            newsletterMsg._redirectTimer = setTimeout(function () {
+              window.location.href = "404.html";
+            }, 1000);
+          }
           return;
         }
         if (form.id === "reservation-form") {

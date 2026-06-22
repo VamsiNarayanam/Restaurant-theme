@@ -784,7 +784,8 @@ h4 { font-size: 1.15rem; }
   font-weight: 600;
 }
 
-.form-success.is-hidden {
+.form-success.is-hidden,
+.is-hidden {
   display: none !important;
 }
 
@@ -4641,6 +4642,14 @@ span.testimonial-avatar {
   margin-top: 1rem;
   color: var(--color-accent);
   font-size: 0.9rem;
+  text-align: center;
+}
+
+.cta-band--newsletter .cta-band__success:not(.is-hidden) {
+  margin-top: 1rem;
+  padding-top: 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .cta-band__actions {

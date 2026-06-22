@@ -2174,6 +2174,30 @@ body.premium-theme.page-home .section--cream .section__title {
   color: #1C1917;
 }
 
+body.premium-theme.page-home .testimonial-slider--home {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+body.premium-theme.page-home .testimonial-slider--home .testimonial-slide--premium {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-height: 280px;
+  padding: 2rem 1.75rem 1.5rem;
+  text-align: center;
+}
+
+body.premium-theme.page-home .testimonial-slider--home .testimonial-head {
+  margin-top: auto;
+  justify-content: center;
+}
+
+body.premium-theme.page-home .testimonial-slider--home .testimonial-dots {
+  margin-top: 1.25rem;
+}
+
 body.premium-theme.page-home .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
