@@ -1,11 +1,4 @@
-/* ==========================================================================
-   Stackly · Ember & Oak — Premium Responsive Tweaks
-   Premium-specific breakpoint adjustments
-   ========================================================================== */
 
-/* --------------------------------------------------------------------------
-   Hero — premium mobile refinements
-   -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   body.premium-theme .hero-premium__kicker {
     padding-left: 0;
@@ -92,9 +85,6 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   Tablet — premium layout
-   -------------------------------------------------------------------------- */
 @media (max-width: 992px) {
   body.premium-theme .section--cream {
     padding-block: clamp(3rem, 6vw, 5rem);
@@ -123,9 +113,7 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   Small phones — premium touch targets
-   -------------------------------------------------------------------------- */
+
 @media (max-width: 480px) {
   body.premium-theme .btn--primary:hover {
     box-shadow: 0 0 20px var(--eo-gold-glow-soft);
@@ -237,9 +225,6 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   Large screens — premium enhancements
-   -------------------------------------------------------------------------- */
 @media (min-width: 1200px) {
   body.premium-theme .hero-premium__content--left {
     padding-right: 2rem;
@@ -263,9 +248,7 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   Dashboard premium drawer
-   -------------------------------------------------------------------------- */
+
 @media (max-width: 1024px) {
   body.premium-theme.dashboard-page .dashboard-sidebar-pro {
     background: rgba(28, 25, 23, 0.98);
@@ -291,9 +274,6 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   Auth pages — premium mobile
-   -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   body.premium-theme.page-auth .site-header {
     background: rgba(12, 10, 9, 0.92);
@@ -313,9 +293,7 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   Hover capability — disable heavy effects on touch
-   -------------------------------------------------------------------------- */
+
 @media (hover: none) and (pointer: coarse) {
   body.premium-theme .dish-card:hover {
     transform: none;
@@ -346,9 +324,7 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   Landscape — premium hero compression
-   -------------------------------------------------------------------------- */
+
 @media (max-height: 500px) and (orientation: landscape) {
   body.premium-theme .hero-premium__glow {
     display: none;
@@ -364,9 +340,6 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   High contrast preference
-   -------------------------------------------------------------------------- */
 @media (prefers-contrast: more) {
   body.premium-theme .nav-link,
   body.premium-theme .form-label {
@@ -384,18 +357,14 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   Dark mode system preference alignment
-   -------------------------------------------------------------------------- */
+
 @media (prefers-color-scheme: light) {
   body.premium-theme:not(.dashboard-page) {
     color-scheme: dark;
   }
 }
 
-/* --------------------------------------------------------------------------
-   Reduced motion — premium responsive
-   -------------------------------------------------------------------------- */
+
 @media (prefers-reduced-motion: reduce) and (max-width: 768px) {
   body.premium-theme .site-header__nav-inner {
     transition-duration: 0.15s;
