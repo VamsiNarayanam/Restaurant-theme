@@ -680,6 +680,13 @@ h4 { font-size: 1.15rem; }
   padding-right: 2.85rem;
 }
 
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+.form-password__input::-ms-reveal,
+.form-password__input::-ms-clear {
+  display: none;
+}
+
 .form-password__toggle {
   position: absolute;
   top: 50%;
